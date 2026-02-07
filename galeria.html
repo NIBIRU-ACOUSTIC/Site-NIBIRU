@@ -1,0 +1,78 @@
+<!--
+  Página de Galeria
+
+  Esta página exibe uma grade de imagens dos equipamentos e logomarcas
+  relacionados à NIBIRU Sound System.  Cada imagem possui um texto alt
+  descritivo para acessibilidade.
+-->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NIBIRU - Galeria</title>
+
+  <!-- Open Graph / WhatsApp / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="NIBIRU Sound System">
+
+<meta property="og:title" content="NIBIRU Sound System">
+<meta property="og:description" content="Sistemas de som profissional para raves, festivais e eventos. Locação e assistência técnica em Cascavel/PR.">
+
+<meta property="og:image" content="https://gust4xyz.github.io/Site-NIBIRU/images/og-banner.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+<meta property="og:url" content="https://gust4xyz.github.io/Site-NIBIRU/">
+
+<!-- Twitter (ajuda no preview em alguns apps) -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://gust4xyz.github.io/Site-NIBIRU/images/og-banner.png">
+
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Favicon (ícone da aba) -->
+<link rel="icon" type="image/png" href="images/favicon.png">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Navegação principal -->
+  <nav>
+    
+  <a class="logo" href="index.html" aria-label="Voltar para a Home">
+  <img src="images/logo.png" alt="NIBIRU">
+</a>
+
+
+    <a class="hamburger" href="menu.html" aria-label="Abrir menu">&#9776;</a>
+
+<ul class="nav-links">
+  <li><a href="index.html">Home</a></li>
+  <li><a href="alugar.html">Alugar</a></li>
+  <li><a href="assistencia.html">Assistência Técnica</a></li>
+  <li><a href="eventos.html">Eventos</a></li>
+  <li><a href="parcerias.html">Parcerias</a></li>
+  <li><a href="galeria.html">Galeria</a></li>
+</ul>
+
+  </nav>
+
+  <!-- Conteúdo principal da galeria -->
+ <main class="gallery">
+  <h2>Galeria</h2>
+  <h3>Clique na imagem para ampliar</h3>
+
+  <!-- Grid gerado automaticamente via JS -->
+  <div class="image-grid" id="galleryGrid"></div>
+</main>
+
+<!-- Viewer fullscreen -->
+<div class="viewer" id="viewer" aria-hidden="true">
+  <button class="close" id="viewerClose" aria-label="Fechar">✕</button>
+  <img id="viewerImg" alt="">
+</div>
+<script src="js/script.js"></script>
+</body>
+</html>
